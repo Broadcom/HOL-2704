@@ -8,10 +8,10 @@ Write-Host "2b. Create Shared Services VPC"
 New-Vpc -Name Shared-SVC-VPC -PrivateIp 192.168.2.0/24 | Out-Null 
 
 Write-Host "3a. Create Corp VPC public subnet" 
-New-VpcSubnet -Vpc Corp-VPC -Name Web-Subnet-Public -DhcpMode Server -AccessMode public -IpV4Size 16 -GatewayConnectivity| Out-Null 
+New-VpcSubnet -Vpc Corp-VPC -Name Web-Subnet-Public -DhcpMode Server -AccessMode public -IpV4Size 8 -GatewayConnectivity| Out-Null 
 Write-Host "3b. Create Shared Services VPC subnets: TGW and private" 
-New-VpcSubnet -Vpc Shared-SVC-VPC -Name App-Subnet-TGW -DhcpMode Server -AccessMode privatetgw -IpV4Size 16 -GatewayConnectivity | Out-Null 
-New-VpcSubnet -Vpc Shared-SVC-VPC -Name DB-Subnet-Private -DhcpMode Server -AccessMode private -IpV4Size 16 -GatewayConnectivity | Out-Null 
+New-VpcSubnet -Vpc Shared-SVC-VPC -Name App-Subnet-TGW -DhcpMode Server -AccessMode privatetgw -IpV4Size 8 -GatewayConnectivity | Out-Null 
+New-VpcSubnet -Vpc Shared-SVC-VPC -Name DB-Subnet-Private -DhcpMode Server -AccessMode private -IpV4Size 8 -IpAddress 172.31.0.176/29 -GatewayConnectivity | Out-Null 
 Start-Sleep 2 
 
 Write-Host "4. Connect VMs to new VPC subnets" 
