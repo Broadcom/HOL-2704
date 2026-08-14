@@ -1,73 +1,85 @@
-# Welcome
-
 ```plain
- _   _                 _       _____         _            _        
-| | | |               | |     |  _  |       | |          | |       
-| |_| | __ _ _ __   __| | ___ | | | |_ __   | |     __ _ | |__  ___
-|  _  |/ _` | '_ \ / _` |/ __|| | | | '_ \  | |    / _` || '_ \/ __|
-| | | | (_| | | | | (_| |\__ \\ \_/ / | | | | |___| (_| || |_) \__ \
-\_| |_/\__,_|_| |_|\__,_||___/ \___/|_| |_| \_____/\__,_||_.__/|___/
-```
+       _   _                 _       _____         _            _        
+      | | | |               | |     |  _  |       | |          | |       
+      | |_| | __ _ _ __   __| | ___ | | | |_ __   | |     __ _ | |__  ___
+      |  _  |/ _` | '_ \ / _` |/ __|| | | | '_ \  | |    / _` || '_ \/ __|
+      | | | | (_| | | | | (_| |\__ \\ \_/ / | | | | |___| (_| || |_) \__ \
+      \_| |_/\__,_|_| |_|\__,_||___/ \___/|_| |_| \_____/\__,_||_.__/|___/
 
-## REMOVE THIS BLOCK BEFORE PUBLISHING
-
-THIS IS AN EXAMPLE. REPLACE THIS WITH YOUR OWN README.md using the pattern below.
-
-This is customer facing so please make it look professional. Thanks.
-
-This file can be updated and will be copied to the console desktop at startup.
-
-> **NOTE:** this file is public so NEVER include passwords. The official HOL Password is stored in the PASSWORD.txt that is copied to the console at boot.
-
-## Lab Details
-
-```plain
 * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *
-*                       HOL-2704                  *
+*                                HOL-2704 VCF Labs                              *
 * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - * - *
-```
 
-###  Primary benefits of your lab
+```                                                                               
 
-Provide information about the lab here
+=== Primary benefits of your lab ===
 
-### Featured Product(s)
+This pod is used across multiple labs that cover a multitude of topics including:
+-HOL-2704-01-VCF-L    Mastering the VCF Lifecycle: From Deployment to Operations
+-HOL-2704-02-VCF-L    What's New: Networking on VMware Cloud Foundation 9.1
+-HOL-2704-03-VCF-L    Performance Improvements in VMware Cloud Foundation 9.1
+-HOL-2704-04-VCF-L    Performance Benchmarking and Monitoring on VMware Cloud Foundation 9.1
+-HOL-2704-05-VCF-S    VMware Cloud Foundation 9.1: Installation and Upgrade
+-HOL-2704-06-VCF-L    VMware Cloud Foundation 9.1: Advanced Topics
+-HOL-2704-07-VCF-L    Hands-On with Kubernetes: Deep Dive With the vSphere Kubernetes Service 9.1
+-HOL-2704-08-VCF-L    Advanced Networking in VCF 9.1
 
-More detail about your lab: Products/Features covered in this lab.
 
-* Product 1
-* Product 2
-* Feature 1
-* Feature 2
+=== Featured Product(s) ===
 
-Additional notes and "interesting" facts about your lab. (pre-release code, simulated data, etc.)
+vCenter
+ESX
+vSAN
+NSX
+VCF Operations
+VCF Automation
+VMware vSphere Supervisor
 
-## Modules
 
-Please record account names for this lab. All acccounts use the standard Hands-on Labs password.
+=== All Modules ===
 
-### === Module 1 ===
+All accounts use the standard Hands-on Labs password.
 
-Credentials for all vCenter Operations Manager Instances:
+vCenter Operations Manager Instances:
 User name: admin
 
 For vCenter Server Administration Console:
 User name: root
 
 For the vSphere Client, use:
-User name: administrator@vsphere.local
+User name: administrator@vsphere.local or administrator@wld.sso
 
-### === Module 2 ===
+For the ESX Host Client, use:
+User name: root
 
-big long command line that nobody wants to type
+For the NSX Console, use:
+User name: admin
 
-## Lab Authors
+=== Lab Authors ===
 
-### Principal
+== Principals ==
 
-* Principal Name:
+Brad Bentley
+Chris Horning
+Kevin Brady
 
-### Captain(s)
+== Captains ==
 
-* Captain:
-* Captain:
+David Hensley
+David Manconi
+David Morse
+Diego Cogo
+Doug Fiore
+Eric Garrison
+Ernest Nichols
+Johnny Jagroo
+Kim Delgado
+Leslie Harris
+Michael Fleisher
+Randy Carson
+Randy Jones
+Sorin Platon
+Tim Toohey
+William Nead
+
+Thank you for taking one of our 2704 labs! Please consider taking some of our other labs to get familiar with more of our solutions.
