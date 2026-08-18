@@ -11,8 +11,8 @@
 # Source the .bashrc file for settings/paths/etc...
 . /home/holuser/.bashrc
 # Insert your custom code here:
-if [ -f /home/holuser/Documents/files/addoninstall-istio.yaml ]; then
-    mv -f /home/holuser/Documents/files/addoninstall-istio.yaml /home/holuser/Documents/addoninstall-istio.yaml
+if [ -f /lmchol/home/holuser/Documents/files/addoninstall-istio.yaml ]; then
+    mv -f /lmchol/home/holuser/Documents/files/addoninstall-istio.yaml /lmchol/home/holuser/Documents/addoninstall-istio.yaml
 fi
 
 # Example to echo text into file on Console VM. 
