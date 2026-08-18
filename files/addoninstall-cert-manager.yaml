@@ -1,0 +1,21 @@
+# cert-manager AddonInstall
+# Apply to the Supervisor namespace (not the workload cluster).
+#
+# Usage:
+#   kubectl apply -f addoninstall-cert-manager.yaml -n <SUPERVISOR_NAMESPACE>
+#
+# Replace:
+#   <SUPERVISOR_NAMESPACE>   — vSphere Supervisor namespace (e.g. development-7mvyf)
+# ============================================================================
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonInstall
+metadata:
+  name: cert-manager
+  namespace: <SUPERVISOR_NAMESPACE>
+spec:
+  addonRef:
+    name: cert-manager
+  clusters:
+    - selector:
+        matchLabels:
+          cluster.x-k8s.io/cluster-name: vks-argo
