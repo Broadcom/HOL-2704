@@ -1,0 +1,23 @@
+# Istio AddonInstall
+# Apply to the Supervisor namespace (not the workload cluster).
+
+# Replace:
+#   <SUPERVISOR_NAMESPACE>   — vSphere Supervisor namespace (e.g. development-7mvyf)
+#
+
+# ============================================================================
+apiVersion: addons.kubernetes.vmware.com/v1alpha1
+kind: AddonInstall
+metadata:
+  name: istio
+  namespace: <SUPERVISOR_NAMESPACE>
+spec:
+  addonRef:
+    name: istio
+  addonConfigRef:
+    name: istio
+    kind: AddonConfig
+  clusters:
+    - selector:
+        matchLabels:
+          cluster.x-k8s.io/cluster-name: vks-argo
