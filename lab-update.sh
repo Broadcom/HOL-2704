@@ -15,6 +15,10 @@ if [ -f /lmchol/home/holuser/Documents/files/addoninstall-istio.yaml ]; then
     mv -f /lmchol/home/holuser/Documents/files/addoninstall-istio.yaml /lmchol/home/holuser/Documents/addoninstall-istio.yaml
 fi
 
+if [ -f /lmchol/home/holuser/Documents/files/vcf-inspector-linux-amd64 ]; then
+    chmod +x /lmchol/home/holuser/Documents/files/vcf-inspector-linux-amd64
+fi
+
 # Example to echo text into file on Console VM. 
 # NOTE: when this script runs, /lmchol is mounted to the "/" of the Console VM
 # echo "Functional Testing!" > /lmchol/home/holuser/Documents/FT.txt
