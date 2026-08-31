@@ -75,7 +75,7 @@ VCENTER_PORT     = 443
 DEFAULT_VNA_VM   = "vna-wld01-01a"
 DEFAULT_TARGET_HOST = "esx-06a.site-a.vcf.lab"
 
-PASSWORD_FILE    = "/lmchol/home/holuser/Desktop/PASSWORD.txt"
+PASSWORD_FILE    = "/home/holuser/creds.txt"
 RECHECK_WAIT     = 45   # seconds to wait before re-reading NSX edge state post-sync
 
 
